@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React from 'react';
+import { SearchBar } from './styles/StyledCharacter';
 
-export default function SearchForm() {
- 
+export default function SearchForm({ search, handleChange }) {
+
   return (
-    <section className="search-form">
-     // Add a search form here
-    </section>
+    <SearchBar>
+        <form  className='search-form'>
+          <input className='search-bar' type='text' value={search} onChange={handleChange} placeholder='Search By Character Name' />
+          <button className='search-button' type='submit'>Reset</button>
+      </form>
+    </SearchBar>
   );
 }
+
+
