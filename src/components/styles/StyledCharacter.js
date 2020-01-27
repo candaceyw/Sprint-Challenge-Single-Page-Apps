@@ -12,6 +12,7 @@ export const WelcomeImage = styled.div`
     align-items: center;
     background: white;
     border-radius: 10px;
+    margin-top: 40px;
 
         div{
             display: flex;
@@ -40,7 +41,7 @@ export const WelcomeImage = styled.div`
     img{
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
-        width: 50%;
+        width: 55%;
     }    
 `;
 
